@@ -134,7 +134,7 @@ export default class Thumbs extends Component<Props, State> {
         const total = Children.count(this.props.children);
         const wrapperSize = this.itemsWrapperRef.clientWidth;
         const itemSize = this.props.thumbWidth ? this.props.thumbWidth : outerWidth(this.thumbsRef[0]);
-        const visibleItems = Math.floor(wrapperSize / itemSize);
+        const visibleItems = Math.floor(wrapperSize / (itemSize + 8));
         const lastPosition = total - visibleItems;
         const showArrows = visibleItems < total;
         this.setState((_state, props) => ({
