@@ -1,10 +1,10 @@
 %arrows {
     @include transition(all, 0.25s, ease-in);
-    @include opacity(0.4);
+    @include opacity(1);
     position: absolute;
     z-index: 2;
     top: 20px;
-    background: none;
+    background: rgba(0,0,0,0.2);
     border: 0;
     font-size: 32px;
     cursor: pointer;
@@ -81,7 +81,7 @@
     }
 
     .thumbs-wrapper {
-        margin: 20px;
+        margin: 8px;
         overflow: hidden;
     }
 
